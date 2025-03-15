@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+:root{
+    --cor-primaria: #4F655E;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #AFB1A4;
+
+    --fonte-principal: "Neuton", serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin-top: 7rem;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+}
+
+header{
+    width: 100%;
+    font-size: 1.5rem;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    background-color: var(--cor-primaria);
+}
+
+.navbar-fixed{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 5rem;
+   /* background-color: var(--cor-terciaria); */
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.list-navbar-sections{
+    display: flex;
+    gap: 4rem;
+
+}
+
+
+#section-inicio{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+
+
+a{
+    text-decoration: none;
+    width: 8.75rem;
+    height: 3rem;
+    color: var(--cor-secundaria);
+}
+
+li{
+    list-style: none;
+} 
