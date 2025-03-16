@@ -19,7 +19,7 @@
 
 body{
     width: 100%;
-    height: 100vh;
+    height: 99vh;
     background-color: var(--cor-primaria);
     font-family: var(--fonte-principal);
     letter-spacing: 0.2rem;
@@ -143,12 +143,11 @@ header{
     font-size: 1.5rem;
     line-height: 150%;
     max-width: 70rem;
-    max-height: 20rem;
 }
 
 .ancora-curriculo{
     margin: 0.5rem;
-    padding: 0.7rem 4rem 0.7rem 4rem;
+    padding: 0.7rem 4rem 1rem 4rem;
     content: 2rem;
     border-radius: 3rem;
     text-decoration: none;
@@ -170,20 +169,21 @@ header{
 }
 
 .titulo-section-projetos{
-    margin: 0.8rem;
-    padding: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 5rem 0.8rem 0.8rem 0.8rem;
 
 }
 
 .div-wrapper{
     display: flex;
-    margin: 0.8rem;
-    padding: 0.8rem;
+    justify-content: space-evenly;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .div-wrapper-projeto{
-    margin: 1rem;
-    padding: 1rem;
     display: flex;
     flex-direction: column;
     width: 18rem;
@@ -212,6 +212,25 @@ header{
     margin: 0.8rem;
     padding: 0.8rem;
 }
+
+/*  FIM DA SECTION CONTATOS */
+/* ------------------------- */
+/* INICIO AO FOOTER */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    height: 5rem;
+    font-size: 1rem;
+    background-color: var(--cor-terciaria);
+}
+
+/*  FIM DA SECTION FOOTER */
+/* ------------------------- */
 
 
 h2{
