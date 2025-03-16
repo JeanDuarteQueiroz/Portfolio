@@ -6,22 +6,26 @@
     --cor-terciaria: #AFB1A4;
 
     --fonte-principal: "Neuton", serif;
+
+    --largura-projeto: 20rem;
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    text-decoration: none;
 }
 
 body{
-    margin-top: 7rem;
     width: 100%;
     height: 100vh;
     background-color: var(--cor-primaria);
     font-family: var(--fonte-principal);
+    letter-spacing: 0.2rem;
 }
+
+/*      INICIO DO HEADER         */
 
 header{
     width: 100%;
@@ -37,34 +41,195 @@ header{
     justify-content:space-around;
     align-items: center;
     height: 5rem;
-   /* background-color: var(--cor-terciaria); */
+   /* background-color: var(--cor-terciaria) ; */
     margin: 1rem;
-    padding: 1rem;
+    padding: auto;
 }
 
 .list-navbar-sections{
+    padding: auto;
     display: flex;
     gap: 4rem;
-
 }
 
+.ancora-header{
+    color: var(--cor-secundaria);
+    font-size: 1.3rem;
+    width: 8.75rem;
+    height: 3rem;
+}
+
+.ancora-header:hover{
+    color: var(--cor-terciaria);
+}
+
+
+    /*  FIM DO HEADER   */
+/* ------------------------- */
+/*  INICIO DA SECTION MAIN  */
 
 #section-inicio{
     display: flex;
-    justify-content:space-around;
+    justify-content: center;
     align-items: center;
-
+    gap: 7rem;
+    margin: 0.8rem;
+    padding: 6rem 1rem 1rem 1rem;
 }
 
 
-
-a{
-    text-decoration: none;
-    width: 8.75rem;
-    height: 3rem;
+.text-section-main{
+    width: 78.7rem;
+    height: 50rem;
+}   
+.div-text-section-inicio{
+    width: 28.9rem;
     color: var(--cor-secundaria);
+    font-weight: 500;
+    text-align: center;
 }
+.titulo-section-inicio{
+    font-size: 3.75rem;
+    font-weight: 500;
+}
+.text-section-inicio{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+/*  FIM DA SECTION MAIN */
+/* ------------------------- */
+/* INICIO DA SECTION ARROW */
+
+.div-arrow{
+    display: flex;
+    padding: 0.8;
+    margin: 0.8rem;
+    width: 98%;
+    justify-content: center;
+    align-items: start;
+    height: 7rem;
+}
+.p-arrow{
+    align-items: start;
+    font-size: 4rem;
+    color: var(--cor-terciaria);
+}
+
+/*  FIM DA SECTION ARROW */
+/* ------------------------- */
+/* INICIO DA SECTION SOBRE MIM */
+
+#section-sobremim{
+    align-items: center;
+    margin: 0.8rem;
+    padding: 0.8rem;
+    max-height: 75rem;
+}
+
+.div-text-section-sobremim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin: 6rem 1rem 1rem 1rem;
+}
+
+.text-sobremim{
+    color: var(--cor-secundaria);
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    line-height: 150%;
+    max-width: 70rem;
+    max-height: 20rem;
+}
+
+.ancora-curriculo{
+    margin: 0.5rem;
+    padding: 0.7rem 4rem 0.7rem 4rem;
+    content: 2rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-terciaria);
+    font-size: 1.2rem;
+}
+
+
+/*  FIM DA SECTION SOBRE MIM */
+/* ------------------------- */
+/* INICIO DA SECTION PROJETOS */
+
+#section-projetos{
+    text-align: center;
+    margin: 0.8rem;
+    padding: 0.8rem;
+    max-height: 50rem
+}
+
+.titulo-section-projetos{
+    margin: 0.8rem;
+    padding: 0.8rem;
+
+}
+
+.div-wrapper{
+    display: flex;
+    margin: 0.8rem;
+    padding: 0.8rem;
+}
+
+.div-wrapper-projeto{
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 18rem;
+}
+
+.div-imagem-projeto{
+    background-color: var(--cor-secundaria);
+    width: 18rem;
+    height: 12.75rem;
+}
+
+.div-texto-projeto{
+    background-color: var(--cor-terciaria);
+    width: 18rem;
+}
+
+
+
+/*  FIM DA SECTION PROJETOS */
+/* ------------------------- */
+/* INICIO DA SECTION CONTATOS */
+
+#section-contato{
+    text-align: center;
+    margin: 0.8rem;
+    padding: 0.8rem;
+}
+
+
+h2{
+    color: var(--cor-secundaria);
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+
+/* img{
+    max-width: 2rem;
+    max-height: 2rem ;
+} */
 
 li{
     list-style: none;
 } 
+
+span{
+    color: var(--cor-terciaria);
+}
