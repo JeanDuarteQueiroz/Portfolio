@@ -7,7 +7,12 @@
 
     --fonte-principal: "Neuton", serif;
 
-    --largura-projeto: 20rem;
+    --largura-img: 18rem;
+    --altura-img: 12rem;
+
+    --largura-text: 18rem;
+    --altura-text: 4rem;
+    
 }
 
 *{
@@ -49,6 +54,8 @@ header{
 .list-navbar-sections{
     padding: auto;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 4rem;
 }
 
@@ -61,6 +68,7 @@ header{
 
 .ancora-header:hover{
     color: var(--cor-terciaria);
+    transition: color 0.5s;
 }
 
 
@@ -155,7 +163,11 @@ header{
     background-color: var(--cor-terciaria);
     font-size: 1.2rem;
 }
-
+.ancora-curriculo:hover{
+    transition: color 0.5s;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
 
 /*  FIM DA SECTION SOBRE MIM */
 /* ------------------------- */
@@ -165,14 +177,14 @@ header{
     text-align: center;
     margin: 0.8rem;
     padding: 0.8rem;
-    max-height: 50rem
+    min-height: 25rem
 }
 
 .titulo-section-projetos{
     align-items: center;
     justify-content: center;
     margin: 1rem;
-    padding: 5rem 0.8rem 0.8rem 0.8rem;
+    padding: 5rem 0.8rem 3rem 0.8rem;
 
 }
 
@@ -186,19 +198,23 @@ header{
 .div-wrapper-projeto{
     display: flex;
     flex-direction: column;
+    gap: none;
     width: 18rem;
-    height: 18rem;
 }
 
 .div-imagem-projeto{
     background-color: var(--cor-secundaria);
-    width: 18rem;
-    height: 12.75rem;
+    height: var(--altura-img); 
+    
+}
+
+.img-projeto{
+    max-width: 18rem;
 }
 
 .div-texto-projeto{
     background-color: var(--cor-terciaria);
-    width: 18rem;
+    height: var(--altura-text);
 }
 
 
@@ -212,6 +228,44 @@ header{
     margin: 0.8rem;
     padding: 0.8rem;
 }
+
+.titulo-section-contato{
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem 0.8rem 5rem 0.8rem;
+}
+
+.div-lista-section-contato{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+    
+}
+
+.list-section-contato{
+    text-align: justify;
+}
+
+.ancora-contatos{
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    
+}
+
+.ancora-contatos:hover{
+    color: var(--cor-terciaria);
+    transition: color 0.5s;
+}
+
+.img-contato{
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+
 
 /*  FIM DA SECTION CONTATOS */
 /* ------------------------- */
