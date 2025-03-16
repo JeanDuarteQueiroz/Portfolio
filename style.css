@@ -245,10 +245,6 @@ header{
     
 }
 
-.list-section-contato{
-    text-align: justify;
-}
-
 .ancora-contatos{
     text-decoration: none;
     color: var(--cor-secundaria);
