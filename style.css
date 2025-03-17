@@ -253,8 +253,10 @@ header{
 
 .div-lista-section-contato{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    gap: 2rem;
     margin: 1rem;
     padding: 1rem;
     
