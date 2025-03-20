@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
 
 :root{
-    --cor-primaria: #4F655E;
-    --cor-secundaria: #ffffff;
-    --cor-terciaria: #AFB1A4;
+    --cor-primaria: black;
+    --cor-secundaria: #d8c9c9;
+    --cor-terciaria: #4258a9;
 
     --fonte-principal: "Neuton", serif;
 
@@ -248,24 +248,13 @@ header{
     align-items: center;
     justify-content: center;
     margin: 1rem;
-    padding: 3rem 0.8rem 0rem 0.8rem;
-}
-
-.div-lista-section-contato{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    gap: 2rem;
-    margin: 1rem;
-    padding: 1rem;
-    
+    padding: 5rem 0.8rem 0rem 0.8rem;
 }
 
 .ancora-contatos{
     text-decoration: none;
     color: var(--cor-secundaria);
-    
+    font-size: 1.6rem;
 }
 
 .ancora-contatos:hover{
@@ -274,8 +263,8 @@ header{
 }
 
 .img-contato{
-    max-width: 2rem;
-    max-height: 2rem;
+    max-width: 2.2rem;
+    max-height: 2.2rem;
 }
 
 
@@ -291,10 +280,26 @@ footer{
     align-items: center;
     width: 100%;
     height: 100vh;
-    height: 5rem;
+    height: 15rem;
     font-size: 1rem;
     background-color: var(--cor-terciaria);
 }
+
+.div-footer-wrapper{
+    font-size: 1.2rem;
+}
+
+
+.div-lista-section-contato{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+    
+}
+
 
 /*  FIM DA SECTION FOOTER */
 /* ------------------------- */
@@ -304,6 +309,11 @@ h2{
     color: var(--cor-secundaria);
     font-weight: 400;
     font-size: 2.5rem;
+}
+
+h2:hover{
+    color: var(--cor-terciaria);
+    transition: color 0.5s;
 }
 
 
