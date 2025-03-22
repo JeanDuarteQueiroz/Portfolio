@@ -21,6 +21,19 @@
     100% { transform: translateY(0); }
 }
 
+@keyframes fall {
+    0% { transform: translateY(-200%); opacity: 0;}
+     /*25% { transform: translateY(-150%); opacity: 0.25;}
+    50% { transform: translateY(-100%); opacity: 0.50;}
+    75% {transform: translateY(-50%); opacity: 0.75;} */
+    100% { transform: translateY(0%); opacity: 1;}
+}
+
+@keyframes raise {
+    0% { transform: translateY(200%); opacity: 0;}
+    100% {transform: translateY(0%); opacity: 1;}
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -72,12 +85,20 @@ header{
     width: 8.75rem;
     height: 3rem;
     transition: color 0.5s ease-out;
+    
 }
 
 .ancora-header:hover{
     color: var(--cor-terciaria);
 }
 
+.list-item{
+    transition: 0.5s ease-out;
+}
+
+.list-item:hover{
+    transform: scale(1.2);
+}
 
     /*  FIM DO HEADER   */
 /* ------------------------- */
@@ -92,22 +113,33 @@ header{
     padding: 12rem 1rem 1rem 1rem;
 }
 
-
 .text-section-main{
     width: 78.7rem;
     height: 50rem;
 }   
+.picture-section-inicio{
+    transform: translateY(-200%);
+    animation: fall 2s ease forwards;
+}
+
 .div-text-section-inicio{
     width: 28.9rem;
     color: var(--cor-secundaria);
     font-weight: 500;
     text-align: center;
+
+    animation: raise 2s ease-in-out forwards;
 }
 .titulo-section-inicio{
     font-size: 3.75rem;
     font-weight: 500;
 }
 .text-section-inicio{
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.text-section-inicio2{
     padding: 1rem;
     font-size: 1.3rem;
 }
@@ -171,9 +203,10 @@ header{
     color: var(--cor-secundaria);
     background-color: var(--cor-terciaria);
     font-size: 1.2rem;
+    transition: 1s ease-out;
 }
 .ancora-curriculo:hover{
-    transition: color 0.5s;
+    transform: scale(1.2);
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
 }
