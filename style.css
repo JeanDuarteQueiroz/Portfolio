@@ -23,9 +23,6 @@
 
 @keyframes fall {
     0% { transform: translateY(-200%); opacity: 0;}
-     /*25% { transform: translateY(-150%); opacity: 0.25;}
-    50% { transform: translateY(-100%); opacity: 0.50;}
-    75% {transform: translateY(-50%); opacity: 0.75;} */
     100% { transform: translateY(0%); opacity: 1;}
 }
 
@@ -127,21 +124,25 @@ header{
     color: var(--cor-secundaria);
     font-weight: 500;
     text-align: center;
-
-    animation: raise 2s ease-in-out forwards;
+    animation: raise 2s ease forwards;
+    
 }
 .titulo-section-inicio{
     font-size: 3.75rem;
     font-weight: 500;
+    animation-delay: 1s;
+    
 }
 .text-section-inicio{
     padding: 1rem;
     font-size: 1.3rem;
+    animation-delay: 2s;
 }
 
 .text-section-inicio2{
     padding: 1rem;
     font-size: 1.3rem;
+    animation-delay: 3s;
 }
 
 /*  FIM DA SECTION MAIN */
@@ -156,7 +157,7 @@ header{
     justify-content: center;
     align-items: start;
     height: 7rem;
-    animation: pulseArrow 1s infinite;
+    animation: pulseArrow 1s ease-in-out infinite;
     z-index: 1;
 }
 .p-arrow{
@@ -298,6 +299,12 @@ header{
 .img-contato{
     max-width: 2.2rem;
     max-height: 2.2rem;
+    transition: 1s ease-out;
+}
+
+.img-contato:hover{
+    transform: rotate(360deg) scale(1.5);
+
 }
 
 
