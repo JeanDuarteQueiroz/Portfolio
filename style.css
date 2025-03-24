@@ -249,11 +249,10 @@ header{
 .div-imagem-projeto{
     background-color: var(--cor-secundaria);
     height: var(--altura-img); 
-    
 }
-
 .img-projeto{
-    max-width: 18rem;
+    width: 18rem;
+    object-fit: cover;
 }
 
 .div-texto-projeto{
